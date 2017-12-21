@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ICT13580039EndB.ProductNewPage">
+    <ScrollView
+        Orientation="Vertical"
+        Padding="40">
+        <StackLayout
+            Orientation="Vertical">
+            <Label
+                x:Name="titleLabel"
+                Text="ICT13580039EndB"
+                Margin="0,0,0,30"
+                HorizontalOptions="Center"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Black" />
+            <Picker
+                x:Name="categoryPicker"
+                Title="เลือกประเภทรถ"
+
+                BackgroundColor="White" />
+            <Picker
+                x:Name="brandPicker"
+                Title="เลือกยี่ห้อรถ"
+                BackgroundColor="White" />
+            <Entry
+                x:Name="classEntry"
+                Placeholder="รุ่น" />
+            <Label
+                Text="ปี"
+                FontSize="14"
+                TextColor="Black"/>
+            <Label
+                x:Name="yearLabel"
+                Text="0" />
+            <Stepper
+                x:Name="myStepper"
+                Maximum="2020"
+                Minimum="1998"
+                Value="0"
+                Increment="1" />
+            <Label
+                Text="เลขไมล์(กม.)" />
+            <Label
+                x:Name="numberLabel"
+                Text="0" />
+            <Slider
+                x:Name="mySlider"
+                Maximum="200000"
+                Minimum="0"
+                Value="10000" />
+            <Label
+                Text="สี" 
+                FontSize="14"
+                TextColor="Black"/>
+            <Picker
+                x:Name="colorPicker"
+                Title="เลือกสี"
+                BackgroundColor="White" />
+            <Label
+                Text="รถดีเลอร์"
+                FontSize="14"
+                TextColor="Black" />
+            <Switch
+                x:Name="statusEnty" />
+            <Label
+                Text="รายละเอียด"
+                FontSize="14"
+                TextColor="Black" />
+            <Editor
+                x:Name="descriptionEditor"
+                BackgroundColor="Black"
+                HeightRequest="100" />
+            <Label
+                Text="ราคาสินค้า"
+                TextColor="Black"
+                FontSize="14" />
+            <Entry
+                x:Name="productPriceEntry"
+                Placeholder="ราคาสินค้า"
+                BackgroundColor="White" />
+            <Label
+                Text="จังหวัด"
+                TextColor="Black"
+                FontSize="14" />
+            <Picker
+                x:Name="cityPicker"
+                Title="เลือกจังหวัด"
+                BackgroundColor="White" />
+            <Label
+                FontSize="14"
+                Text="เบอร์โทร"
+                TextColor="Black" />
+            <Entry
+                x:Name="cellPhoneEntry"
+                BackgroundColor="White"
+                Keyboard="Telephone"
+                Placeholder="เบอร์โทร" />
+            <StackLayout
+                Orientation="Horizontal"
+                Margin="0,30,0,0">
+                <Button
+                    x:Name="saveButton"
+                    Text="save"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    HorizontalOptions="FillAndExpand" />
+                <Button
+                    x:Name="cancleButton"
+                    Text="Cancle"
+                    BackgroundColor="Red"
+                    HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
