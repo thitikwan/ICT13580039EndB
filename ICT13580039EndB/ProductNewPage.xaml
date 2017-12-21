@@ -71,7 +71,7 @@
                 TextColor="Black" />
             <Editor
                 x:Name="descriptionEditor"
-                BackgroundColor="Black"
+                BackgroundColor="Blue"
                 HeightRequest="100" />
             <Label
                 Text="ราคาสินค้า"

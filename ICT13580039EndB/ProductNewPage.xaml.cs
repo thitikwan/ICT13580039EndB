@@ -21,6 +21,8 @@ namespace ICT13580039EndB
             brandPicker.Items.Add("MASDA");
             cityPicker.Items.Add("กรุงเทพ");
 			cityPicker.Items.Add("เพชรบุรี");
+            colorPicker.Items.Add("แดง");
+			colorPicker.Items.Add("ฟ้า");
 
             myStepper.ValueChanged += MyStepper_ValueChanged;
             mySlider.ValueChanged += MySlider_ValueChanged;
